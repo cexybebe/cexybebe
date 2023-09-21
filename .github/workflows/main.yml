@@ -1,0 +1,29 @@
+name: CI/CD для сайта визитки
+
+on:
+  push:
+    branches:
+      - main # Можете заменить на имя вашей основной ветки
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout кода
+        uses: actions/checkout@v2
+
+      - name: Установка Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14 # Замените на вашу версию Node.js
+
+      - name: Установка зависимостей
+        run: npm install # Здесь можете заменить на другие команды сборки, если необходимо
+
+      - name: Сборка и развертывание
+        run: |
+          # Ваш скрипт сборки (например, сборка и минификация CSS и JS)
+          # Здесь также можете копировать файлы на сервер, если это необходимо
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
