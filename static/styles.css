@@ -40,8 +40,18 @@ section {
     margin: 20px;
     border: 1px solid #ccc;
     border-radius: 15px;
-    max-width: 1000px;
+    max-width: 800px;
     background-color: rgba(128, 0, 128, 0.5);
+}
+
+/* Стили для обертки изображения */
+.image-wrapper {
+    float: right;
+    width: 40%; /* 33% ширины контейнера для трех карточек */
+    margin-left: 0px; /* Отступ слева */
+    height: 100vh; /* Занимать всю высоту экрана */
+    background-image: url('static/content/Subject1.png'); /* Путь к вашей картинке */
+    background-size: cover; /* Растягивать картинку на всю высоту и ширину контейнера */
 }
 
 /* Добавьте стили для заголовков и текста внутри секций, если необходимо */

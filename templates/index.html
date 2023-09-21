@@ -12,28 +12,36 @@
         <p>кюа автомейшен</p>
     </header>
 
-    <section id="about">
-        <h2>О себе</h2>
-        <p>айтишник, анимешник, рэпер,
-        кста зацените мой трек -</p>
-        <!-- Аудиоплеер для вашего трека -->
-        <div class="audio-player">
-            <audio controls>
-                <source src="content/Morocco.m4a" type="audio/mpeg">
-                Ваш браузер не поддерживает аудио элемент.
-            </audio>
-        </div>
-    </section>
-    <section id="portfolio">
-        <h2>Портфолио</h2>
-        <!-- Здесь добавьте ваши работы или проекты -->
-    </section>
+    <div class="container">
+            <aside class="image-wrapper">
+        <img src="{{ url_for('static', filename='content/Subject1.png') }}" alt="Изображение">
+        </aside>
+        <section id="about">
+            <h2>О себе</h2>
+            <p>айтишник, анимешник, рэпер,
+            кста зацените мой трек -</p>
+            <!-- Аудиоплеер для вашего трека -->
+            <div class="audio-player">
+                <audio controls>
+                    <source src="content/Morocco.m4a" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>сылки на меня:</h2>
+            <p>https://github.com/cexybebe</p>
+            <p>https://soundcloud.com/cexybebe</p>
+        </section>
+    </div>
     <section id="contact">
         <h2>Контакты</h2>
         <p>в телегу пишите если че</p>
+        <img src="{{ url_for('static', filename='content/t_me-cexybebe.jpg') }}" alt="Изображение">
     </section>
     <footer>
-        <p>&copy; 2023 сексу бэйбе</p>
+        <p>&copy; 2023 сеху бэйбе</p>
     </footer>
 </body>
 </html>
