@@ -1,10 +1,16 @@
-/* Стилизация основных элементов */
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('content/IMG_3372.jpg'); /* Замените на путь к вашей фоновой картинке */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фон будет зафиксированным */
+    color: white;
 }
 
+/* Стили для header и навигации */
 header {
     text-align: center;
     padding: 20px;
@@ -28,17 +34,36 @@ nav a {
     color: #333;
 }
 
-/* Стилизация разделов */
+/* Стили для секций (карточек) */
 section {
     padding: 20px;
     margin: 20px;
     border: 1px solid #ccc;
+    border-radius: 15px;
+    max-width: 1000px;
+    background-color: rgba(128, 0, 128, 0.5);
 }
 
-/* Стилизация футера */
+/* Добавьте стили для заголовков и текста внутри секций, если необходимо */
+section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Стили для футера */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: #fff;
+}
+
+/* При наведении на ссылки в навигационном меню */
+nav a:hover {
+    color: #ff00ff;
 }
