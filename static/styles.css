@@ -54,6 +54,14 @@ section {
     background-size: cover; /* Растягивать картинку на всю высоту и ширину контейнера */
 }
 
+.custom-link {
+    font-family: Verdana;
+    border: 1px solid red;
+    font-size: 24px;
+    color: rgba(101, 212, 110, 0.8);
+    text-decoration: none; /* Убрать подчеркивание (если нужно) */
+  }
+
 /* Добавьте стили для заголовков и текста внутри секций, если необходимо */
 section h2 {
     font-size: 18px;
